@@ -1,0 +1,91 @@
+
+<section style="margin-top: 50px;" class="vh-100">
+    <div class="container-fluid h-custom">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-md-9 col-lg-6 col-xl-5">
+          <img src="assets/img/img14.avif" 
+            class="img-fluid"
+            style="width: 651px; height: 646px;"
+            alt="15 idées d'applications que vous pouvez voler (mise à jour 2020)">
+        </div>
+        <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+          <div class="mbdesign">
+          <form (ngSubmit)="login()">
+            <div class="mb-4">
+              <h1 style="color: blue; margin-top: 10px; margin-left: 160px;font-weight:1000;font-size: large; ">SAHTYAPP</h1>
+
+              <p class="lead fw-normal mb-0 me-3">Sign in with</p>
+              <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start mb-4">
+                <div >
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/2023_Facebook_icon.svg" jsaction="VQAsE" class="sFlh5c pT0Scc iPVvYb" style="max-width: 667px; height: 40px; margin: 10px; width: 40px;" alt="Fichier:2023 Facebook icon.svg — Wikipédia" jsname="kn3ccd" aria-hidden="false">
+                  <i class="fab fa-facebook-f"></i>
+                </div>
+                <div >
+                  <img src="https://cdn-icons-png.flaticon.com/512/270/270014.png" jsaction="VQAsE" class="sFlh5c pT0Scc iPVvYb" style="max-width: 512px; height: 40px; margin: 0px; width: 40px;" alt="Google - Icônes des médias sociaux gratuites" jsname="kn3ccd" aria-hidden="false">
+                  <i class="fab fa-twitter"></i>
+                </div>
+                <div >
+                  <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png" jsaction="VQAsE" class="sFlh5c pT0Scc iPVvYb" style="max-width: 512px; height: 40px; margin: 10px; width: 40px;" alt="Linkedin icon - Free download on Iconfinder" jsname="kn3ccd" aria-hidden="false">
+                  <i class="fab fa-linkedin-in"></i>
+                </div>
+              </div>
+            </div>
+  
+            <div class="divider d-flex align-items-center my-4">
+              <p class="text-center fw-bold mx-3 mb-0">Or</p>
+            </div>
+          
+            <div class="mb-3">
+              <label for="username" class="form-label">Nom d'utilisateur</label>
+              <input type="text"id="form3Example3" class="form-control form-control-lg"
+              placeholder="Entrer votre Nom d'utilisation "  name="username" [(ngModel)]="loginRequest.username" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Adreese Email</label>
+              <input type="text"id="form3Example3" class="form-control form-control-lg"
+              placeholder="Entrer votre @Email  "  name="email" [(ngModel)]="loginRequest.email" required>
+            </div>
+            
+            <div class="mb-3">
+              <label for="password" class="form-label">Mot de passe</label>
+              <input type="password"  placeholder="Entrer un mot de passe " class="form-control" id="password" name="password" [(ngModel)]="loginRequest.password" required>
+            </div>
+          
+           
+          
+           
+  
+            <!-- Ajoutez d'autres champs comme nom, prénom, adresse, date de naissance, etc. -->
+  
+            <button type="submit" class="btn btn-primary">Connexion</button>
+            <p *ngIf="message" class="text-success">{{ message }}</p>
+
+            <a routerLink="/forgot-password">Forgot Password?</a>
+         
+          </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top: 100px; height: 100px;" class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-primary">
+      <div class="text-white mb-3 mb-md-0">
+        Copyright © 2020. All rights reserved.
+      </div>
+      <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
+        <button type="button" class="btn btn-primary btn-floating mx-1">
+          <i class="fab fa-facebook-f"></i>
+        </button>
+        <button type="button" class="btn btn-primary btn-floating mx-1">
+          <i class="fab fa-twitter"></i>
+        </button>
+        <button type="button" class="btn btn-primary btn-floating mx-1">
+          <i class="fab fa-linkedin-in"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+
+  
